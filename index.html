@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Questionario</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Compass</h1>
+        <hr>
+    </header>
+
+    <form action="#" method="post">
+        <!-- Situazione Lavorativa -->
+        <section>
+            <h2>Situazione lavorativa</h2>
+
+            <h3><label for="luogo-lavoro">Luogo di lavoro</label></h3>
+            <input type="text" required id="luogo-lavoro" placeholder="Inserisci il luogo di lavoro">
+
+            <h3>Tipo di contratto</h3>
+            <div>
+                <input type="radio" name="contratto" id="tempo-indeterminato" required>
+                <label for="tempo-indeterminato">Tempo indeterminato</label>
+            </div>
+            <div>
+                <input type="radio" name="contratto" id="tempo-determinato">
+                <label for="tempo-determinato">Tempo determinato</label>
+            </div>
+            <div>
+                <input type="radio" name="contratto" id="partita-iva">
+                <label for="partita-iva">Autonomo</label>
+            </div>
+
+            <h3><label for="da-quanto">Da quanto tempo lavora</label></h3>
+            <input type="text" required id="da-quanto" placeholder="Inserisci la durata">
+            
+            <h3><label for="retribuzione-netta">Retribuzione mensile</label></h3>
+            <input type="text" required id="retribuzione-netta" placeholder="Inserisci la retribuzione netta">
+        </section>
+
+        <!-- Abitazione -->
+        <section>
+            <h2>Abitazione</h2>
+            <h3>Tipo di abitazione</h3>
+            <div>
+                <input type="radio" name="abitazione" id="proprieta" required>
+                <label for="proprieta">Proprietà</label>
+            </div>
+            <div>
+                <input type="radio" name="abitazione" id="con-mutuo">
+                <label for="con-mutuo">Con mutuo</label>
+            </div>
+            <div>
+                <input type="radio" name="abitazione" id="affitto">
+                <label for="affitto">Affitto</label>
+            </div>
+            <div>
+                <input type="radio" name="abitazione" id="presso-parenti">
+                <label for="presso-parenti">Presso parenti</label>
+            </div>
+
+            <h3><label for="tempo-residenza">Da quanto tempo risiede nell’abitazione</label></h3>
+            <input type="text" required id="tempo-residenza" placeholder="Inserisci il tempo di residenza">
+        </section>
+
+        <!-- Stato Civile -->
+        <section>
+            <h2>Stato Civile</h2>
+            <h3>Stato civile</h3>
+            <div>
+                <input type="radio" name="stato-civile" id="celibe-nubile" required>
+                <label for="celibe-nubile">Celibe/Nubile</label>
+            </div>
+            <div>
+                <input type="radio" name="stato-civile" id="coniugato">
+                <label for="coniugato">Coniugato/a</label>
+            </div>
+            <div>
+                <input type="radio" name="stato-civile" id="separato">
+                <label for="separato">Separato/a</label>
+            </div>
+            <div>
+                <input type="radio" name="stato-civile" id="divorziato">
+                <label for="divorziato">Divorziato/a</label>
+            </div>
+
+            <h3>Se coniugato/a, regime patrimoniale</h3>
+            <div>
+                <input type="radio" name="regime-patrimoniale" id="comunione-beni">
+                <label for="comunione-beni">Comunione di beni</label>
+            </div>
+            <div>
+                <input type="radio" name="regime-patrimoniale" id="separazione-beni">
+                <label for="separazione-beni">Separazione di beni</label>
+            </div>
+        </section>
+
+        <!-- Famiglia -->
+        <section>
+            <h2>Famiglia</h2>
+            <h3><label for="n-membri">Numero totale di persone nel nucleo familiare</label></h3>
+            <input type="text" required id="n-membri" placeholder="Inserisci il numero">
+
+            <h3><label for="n-membri-reddito">Numero di persone con reddito</label></h3>
+            <input type="text" required id="n-membri-reddito" placeholder="Inserisci il numero">
+        </section>
+
+        <!-- IBAN -->
+        <section>
+            <h2>Dati Bancari</h2>
+            <h3><label for="cod-iban">IBAN</label></h3>
+            <input type="text" required id="cod-iban" placeholder="Inserisci il tuo IBAN">
+        </section>
+
+        <button type="submit">Invia dati</button>
+
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
